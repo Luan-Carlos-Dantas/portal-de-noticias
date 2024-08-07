@@ -1,18 +1,18 @@
 :root{
   font-size: 62.5%;
-  font-family: 'Archivo', sans-serif;
+  font-family: "Archivo", sans-serif;
   --brand-color-light:#60A5FA;
   --brand-color-dark:#1D4ED8;
   --bg-color:#0F172A;
-  --stroke-color:stroke-color;
+  --stroke-color:#1E293B;
   --text-color-primary:#F1F5F9;
   --text-color-secondary:#CBD5E1;
-  --font-heading1: 800 2.4rem/135%;
-  --font-heading2: 800 1.6rem/140%;
-  --font-heading1: 800 1.6rem/140%;
-  --font-span: 600 1.4rem/145%;
-  --font-text: 400 1.6rem/140%;
-  --font-text-sm: 400 1.4rem/160%;
+  --font-heading1: 900 2.4rem/135% 'Archivo', sans-serif;
+  --font-heading2: 800 1.6rem/140% 'Archivo', sans-serif;
+  --font-heading3: 800 1.6rem/140% 'Archivo', sans-serif;
+  --font-span: 600 1.4rem/145% 'Archivo', sans-serif;
+  --font-text: 400 1.6rem/140% 'Archivo', sans-serif;
+  --font-text-sm: 400 1.4rem/160% 'Archivo', sans-serif;
 }
 
 *{
@@ -38,4 +38,19 @@ a:hover{
 
 h1,h2,h3,h4,h5,h6{
   font: inherit;
+}
+
+.container{
+  max-width: 128rem;
+  padding-inline: 3.2rem;
+  margin-inline: auto;
+}
+
+/* utility-first */
+.grid{
+  display: grid;
+}
+
+.grid-flow-col{
+  grid-auto-flow: column;
 }
